@@ -1,0 +1,20 @@
+<div class="col s3" >
+    <div class="card" appHover>
+        <div class="card-image">
+            <img src="https://pbs.twimg.com/profile_images/2881220369/2b27ac38b43b17a8c5eacfc443ce3384_400x400.jpeg">
+            <span
+                    class="card-title"
+                    [ngClass]="{'marked':isMarked}"
+            >{{user.name | uppercase }}
+            </span>
+        </div>
+        <div class="card-content">
+            <p>{{user.geo}}</p>
+        </div>
+        <div class="card-action">
+            <a
+                (click)="onClick()"
+                    class="waves-effect waves-light btn">CLICK</a>
+        </div>
+    </div>
+</div>
